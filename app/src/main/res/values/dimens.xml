@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_width">720px</dimen>
+    <dimen name="screen_height">1280px</dimen>
+
+    <dimen name="d10">10px</dimen>
+    <dimen name="d30">30px</dimen>
+</resources>
