@@ -153,18 +153,28 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
     /**
      * 显示软键盘
      */
-    protected void showSoftInput(View view) {
-        InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
-//        imm.showSoftInput(view, InputMethodManager.SHOW_FORCED);
+    public void showSoftInput( View view){
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm != null) {
+            view.requestFocus();
+            imm.showSoftInput(view, 0);
+        }
     }
 
     /**
      * 隐藏软键盘
      */
-    protected void hideSoftInput(View view) {
+    public void hideSoftInput(View view){
         InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        if(imm != null) imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
+    /**
+     * 切换软键盘
+     */
+    public void toggleSoftInput(View view){
+        InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
+        if(imm != null) imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     /**
