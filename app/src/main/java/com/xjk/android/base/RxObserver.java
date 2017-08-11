@@ -5,6 +5,8 @@ import com.xjk.android.data.api.ApiException;
 import com.xjk.android.utils.NetworkUtils;
 import com.xjk.android.utils.UIUtils;
 
+import java.net.SocketTimeoutException;
+
 import io.reactivex.observers.DisposableObserver;
 
 /**
@@ -58,6 +60,8 @@ public abstract class RxObserver<T> extends DisposableObserver<T> {
 //                RxBus.get().post(Constants.EventType.TAG_RELOGIN_ACTIVITY, true);
 //            }
             mView.showError(e.getMessage());
+        }else if(e instanceof SocketTimeoutException){
+            mView.showError(UIUtils.getString(R.string.api_net_timeout));
         }else {
             mView.showError(UIUtils.getString(R.string.api_net_error));
         }
