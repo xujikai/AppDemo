@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.xjk.android.ui.activity.MainActivity">
 
     <Button
@@ -11,6 +12,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="访问12306"/>
+
+    <Button
+        android:id="@+id/btn_image_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看大图"/>
+
+    <Button
+        android:id="@+id/btn_shadow_card_stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阴影卡片"/>
+
+    <Button
+        android:id="@+id/btn_web_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"/>
 
     <TextView
         android:id="@+id/tv_get_12306"

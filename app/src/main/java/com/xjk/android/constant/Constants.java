@@ -34,23 +34,16 @@ public class Constants {
 //======================================================================================
 
     /**
-     * 阿里支付成功状态码
+     * 网络请求相关参数
      */
-    public static final String PAY_ALI_SUCCESS = "9000";
-
-    /**
-     * 微信支付成功状态码
-     */
-    public static final String WX_APP_ID = "wxd930ea5d5a258f4f";
-
-    /**
-     * 网络请求成功
-     */
-    public static final int STATUS_SUCCESS = 0;
-    /**
-     * 极光推送别名
-     */
-    public static final String JPUSH_ALIAS = "jpush_alias";
+    public static final int STATUS_TIMEOUT = -2;// 网络超时
+    public static final int STATUS_ERROR = -1;// 网络错误
+    public static final int STATUS_SUCCESS = 200;
+    public static final int STATUS_NO_DATA = 201;
+    public static final int STATUS_NO_MORE = 202;
+    public static final int STATUS_FALSE = 203;
+    public static final int STATUS_TOKEN = 400;
+    public static boolean DEBUG = true;
 
     /**
      * 注册时向服务器传递的Session值

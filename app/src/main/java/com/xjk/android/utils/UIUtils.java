@@ -68,8 +68,8 @@ public class UIUtils {
     }
 
     //获取Dimension
-    public static float getDimension(int dimensionId){
-        return getResources().getDimension(dimensionId);
+    public static int getDimension(int dimensionId){
+        return getResources().getDimensionPixelSize(dimensionId);
     }
 
     public static int getInteger(int integerId){
@@ -103,18 +103,23 @@ public class UIUtils {
     }
 
     //手机的像素密度跟文档中的最接近值
-    //dip--->px
-    public static int dip2px(int dip) {
+    //dp--->px
+    public static int dp2px(int dp) {
         //获取dip和px的比例关系
         float d = getResources().getDisplayMetrics().density;
         // (int)(80.4+0.5)   (int)(80.6+0.5)
-        return (int) (dip * d + 0.5);
+        return (int) (dp * d + 0.5);
     }
 
-    //px---->dip
-    public static int px2dip(int px) {
+    //px---->dp
+    public static int px2dp(int px) {
         float d = getResources().getDisplayMetrics().density;
         return (int) (px / d + 0.5);
+    }
+
+    public static int sp2px(float sp) {
+        final float scale = getResources().getDisplayMetrics().scaledDensity;
+        return (int) (sp * scale + 0.5f);
     }
 
 }

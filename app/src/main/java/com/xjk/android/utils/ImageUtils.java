@@ -40,7 +40,7 @@ public class ImageUtils {
     }
 
     public static void setRoundImageUrl(Context context, ImageView view, String imageUrl, int defResourceId) {
-        setImageUrl(context,view,imageUrl,defResourceId,new CenterCrop(context), new RoundedCornersTransformation(context, UIUtils.dip2px(6), 0));
+        setImageUrl(context,view,imageUrl,defResourceId,new CenterCrop(context), new RoundedCornersTransformation(context, UIUtils.dp2px(6), 0));
     }
 
     public static Drawable getMaskDrawable(int maskId) {

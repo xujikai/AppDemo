@@ -25,6 +25,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.image_large.LargeImage01Activity"/>
+        <activity android:name=".ui.image_large.LargeImage02Activity"/>
+        <activity android:name=".ui.image_handle.HandleImage01Activity"/>
+        <activity android:name=".ui.image_handle.HandleImage02Activity"/>
+        <activity android:name=".ui.shadow_view.ShadowCardStackActivity"/>
+        <activity android:name=".ui.shadow_view.ShadowCardDragActivity"/>
+        <activity android:name=".ui.web_view.WebViewActivity"/>
+
+        <!-- 适配安卓7.0 start -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xjk.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!-- 适配安卓7.0 start -->
     </application>
 
 </manifest>

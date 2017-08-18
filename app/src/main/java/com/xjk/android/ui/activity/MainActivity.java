@@ -4,6 +4,9 @@ import com.xjk.android.R;
 import com.xjk.android.base.BaseActivity;
 import com.xjk.android.base.RxObserver;
 import com.xjk.android.data.DataManager;
+import com.xjk.android.ui.image_handle.HandleImage02Activity;
+import com.xjk.android.ui.shadow_view.ShadowCardDragActivity;
+import com.xjk.android.ui.web_view.WebViewActivity;
 import com.xjk.android.utils.L;
 
 import butterknife.OnClick;
@@ -45,6 +48,21 @@ public class MainActivity extends BaseActivity {
                         L.e(e.getMessage());
                     }
                 });
+    }
+
+    @OnClick(R.id.btn_image_large)
+    public void getLargeImage(){
+        HandleImage02Activity.start(mContext);
+    }
+
+    @OnClick(R.id.btn_shadow_card_stack)
+    public void getShadowCardStack(){
+        ShadowCardDragActivity.start(mContext);
+    }
+
+    @OnClick(R.id.btn_web_view)
+    public void getWebView(){
+        WebViewActivity.start(mContext, "https://www.baidu.com");
     }
 
 }
