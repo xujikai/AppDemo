@@ -131,6 +131,7 @@ public class Api {
 //                .writeUtf8(CER_12306)
 //                .inputStream();
 
+        // ugirls.cer
         try {
             return UIUtils.getContext().getAssets().open("srca.cer");
         } catch (IOException e) {

@@ -33,6 +33,16 @@ public interface ApiService {
     @GET("https://kyfw.12306.cn/otn")
     Observable<String> getTest();
 
+    @FormUrlEncoded
+    @POST("https://appv2.youguoquan.com/Users/Common/GetInfo")
+    Observable<String> testGirl(@Field("Version") String version,
+                                @Field("UserId") String userId,
+                                @Field("Auth") int auth,
+                                @Field("Platform") String platform,
+                                @Field("EquipmentCode") String equipmentCode,
+                                @Field("AgentCode") String agentCode,
+                                @Field("Token") String token);
+
     /**
      * 上传单个文件
      */

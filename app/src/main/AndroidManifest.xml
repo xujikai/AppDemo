@@ -32,6 +32,11 @@
         <activity android:name=".ui.shadow_view.ShadowCardStackActivity"/>
         <activity android:name=".ui.shadow_view.ShadowCardDragActivity"/>
         <activity android:name=".ui.web_view.WebViewActivity"/>
+        <activity android:name=".ui.activity.SwipeRefreshActivity"/>
+        <activity android:name=".ui.activity.SearchHistoryActivity"/>
+        <activity android:name=".ui.coor_behavior.CoorDemo01Activity"/>
+        <activity android:name=".ui.coor_behavior.CoorDemo03Activity"/>
+        <activity android:name=".ui.coor_behavior.CoorDemo04Activity"/>
 
         <!-- 适配安卓7.0 start -->
         <provider

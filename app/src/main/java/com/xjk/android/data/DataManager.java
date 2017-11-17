@@ -68,6 +68,13 @@ public class DataManager {
                 .compose(RxUtils.<String>io_main());
     }
 
+    public Observable<String> testGirl(){
+        return mApiService.testGirl("2.2.2", "3431082", 0, "android",
+                "55f90e3f4d8311e7a94b1418772a0ca31497061213",
+                "yingyoubao", "3b22720babc5d79060935c269771e4b8")
+                .compose(RxUtils.<String>io_main());
+    }
+
     /**
      * 上传单个文件
      */

@@ -78,6 +78,8 @@ dependencies {
     compile rootProject.ext.dependencies["glide"]
     compile rootProject.ext.dependencies["gson"]
 
+    compile rootProject.ext.dependencies["recycler-adapter"]
+
     compile rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-apt"]
     compile rootProject.ext.dependencies["stetho"]

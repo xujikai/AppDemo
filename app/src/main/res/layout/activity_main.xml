@@ -8,6 +8,24 @@
     tools:context="com.xjk.android.ui.activity.MainActivity">
 
     <Button
+        android:id="@+id/btn_search_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史记录"/>
+
+    <Button
+        android:id="@+id/btn_coor_demo01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增强型布局01"/>
+
+    <Button
+        android:id="@+id/btn_coor_demo03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增强型布局03"/>
+
+    <Button
         android:id="@+id/btn_get_12306"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,11 +49,10 @@
         android:layout_height="wrap_content"
         android:text="WebView"/>
 
-    <TextView
-        android:id="@+id/tv_get_12306"
+    <Button
+        android:id="@+id/btn_swipe_refresh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+        android:text="下拉刷新"/>
 
 </LinearLayout>
